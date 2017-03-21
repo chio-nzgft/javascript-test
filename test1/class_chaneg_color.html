@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>5 test</title>
+<style type="text/css">
+    #div1
+    {
+        width:200px;
+        height:200px;
+        border:1px solid black;
+    }
+    .Redbox {background:red;}
+    .Greenbox {background:green;}
+    .Yellowbox {background:yellow;}
+    .Blackbox {background:black; }
+</style>
+
+<script>
+function toSet(Color)
+{
+    console.log("toSet");
+    var oDiv=document.getElementById('div1');
+    oDiv.className=Color;
+    console.log("change ok");
+}
+</script>
+
+</head>
+
+<body>
+<input type="button" value="變紅" onclick=toSet('Redbox') />
+<input type="button" value="變綠" onclick=toSet('Greenbox') />
+<input type="button" value="變黃" onclick=toSet('Yellowbox') />
+<input type="button" value="變黑" onclick=toSet('Blackbox') />
+<div id="div1" >
+    
+</div>
+
+</body>
+</html>
