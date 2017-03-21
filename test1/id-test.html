@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2 test</title>
+<link id='linkTocss1' rel="stylesheet" href="css2.css" type="text/css" />
+<script>
+    function setText1()
+    {
+        var oinp1=document.getElementById('inp1');
+        var oinp2=document.getElementById('inp2');
+        oinp1.value='change 1 word set';
+        oinp2.value='change 2 word set';
+        var olnk1=document.getElementById('linkTocss1');
+        olnk1.href='css1.css';
+        console.log("setText1");
+    }
+    function setText2()
+    {
+        var oinp1=document.getElementById('inp1');
+        var oinp2=document.getElementById('inp2');
+        oinp1.value='change 1 word';
+        oinp1.value='change 2 word';
+        var olnk1=document.getElementById('linkTocss1');
+        olnk1.href='css2.css';
+        console.log("setText2");
+    }
+</script>
+</head>
+
+<body>
+<input id='inp1' type="button" value="change 1 word" onclick="setText1()"/>
+<input id='inp2' type="button" value="change 2 word" onclick="setText2()"/>
+
+</body>
+</html>
